@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col">
+    <input #termino type="text" (keyup)="searchArtist(termino.value)" class="form-control" placeholder="Buscar Artista">
+  </div>
+</div>
+
+<div class="card-columns m-5">
+
+  <!-- <div *ngFor="let artist of artists" class="card">
+      <img class="card-img-top" [src]="artist.images[0].url" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ artist.name }}</h5>
+      </div>
+    </div> -->
+  <div *ngFor="let artist of artists" class="card card-artist">
+    
+
+    <div class="card-body">
+      <h5 class="card-title">{{ artist.name }}</h5>
+    </div>
+
+    <div class="image-artist-wrapper">
+        <img class="image-artist" [src]="artist.images[0].url" alt="Card image cap">
+      </div>
+  </div>
+
+</div>

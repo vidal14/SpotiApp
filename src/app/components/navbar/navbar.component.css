@@ -1,0 +1,20 @@
+.navbar {
+    height: 80px;
+    background: linear-gradient(0deg, #0e0103,#390606);
+}
+
+.navbar ul .nav-item a{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar ul .nav-item.active a{
+    color: #ccc;
+}
+
+.navbar-brand img{
+    width: 35px;
+    height: 35px;
+}

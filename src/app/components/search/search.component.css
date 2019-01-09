@@ -1,0 +1,75 @@
+.image-artist-wrapper {
+    overflow: hidden;
+    width: 90%;
+    border-radius: 50%!important;
+    transition: all 2s ease;
+    position: relative;
+  }
+  
+  .image-artist {
+      width: 100%;
+  }
+  
+  .card.card-artist {
+      background: transparent;
+      position: relative;
+  }
+  
+    .card.card-artist img {
+      -webkit-filter: blur(10px); /* Safari */
+      filter: blur(10px);
+      transition: all .15s ease;
+      /* -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); */
+    }
+  
+    .image-artist-wrapper:hover img,
+    .card-artist .card-body:hover + .image-artist-wrapper img {
+       -webkit-filter: blur(0px);
+      filter: blur(0px); 
+      -webkit-filter: sepia(100%);
+      filter: sepia(100%);
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  
+    .card.card-artist h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        
+    }
+  
+      .card.card-artist .badge-primary {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          color: red;
+          text-transform: uppercase;
+          background: transparent;
+          margin-left: 0;
+          padding-left: 0;
+          /* background: linear-gradient(to right, #f13050,#390606);
+          background: #231557; background: -moz-linear-gradient(315deg,  #231557 0%,#f13050 50%,#fff800 100%);
+          background: -webkit-linear-gradient(315deg,  #231557 0%,#f13050 50%,#fff800 100%);
+          background: linear-gradient(315deg,  #231557 0%,#f13050 50%,#fff800 100%); */
+          background: linear-gradient(to right, #f13050,#390606);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+
+      .card-artist .card-body {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          z-index: 2;
+      }
+
+      .card-artist .card-body h5 {
+          text-align: center;
+      }
